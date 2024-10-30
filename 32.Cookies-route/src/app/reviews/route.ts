@@ -1,4 +1,4 @@
-import {type NextRequest} from "next/server"
+import {NextRequest} from "next"
 import { reviewsTab } from "./data"
 
 
