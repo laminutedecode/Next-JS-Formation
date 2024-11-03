@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Pierre leo",
+    "email": "pierre.does@gmail.com"
+  },
+  {
+    "id": 2,
+    "name": "Clementine Bauch",
+    "email": "clement.bauch@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Laurie Hart",
+    "email": "laurie.hart@gmail.com"
+  },
+  {
+    "id": 4,
+    "name": "Marie Dupuis",
+    "email": "marie.dupuis@gmail.com"
+  }
+]
