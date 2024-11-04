@@ -3,7 +3,8 @@
 import {useState, useEffect, useTransition, FormEvent} from "react"
 import { useParams } from "next/navigation"
 import { User } from "@/types/types"
-
+import { getUserById, updateUser } from "../../services/actionUsers"
+import {useRouter} from "next/navigation"
 
 
 export default function EditPageUser() {
@@ -14,20 +15,16 @@ export default function EditPageUser() {
   const [errors, setErrors] = useState('')
   const [success, setSuccess] = useState('')
   const [isPending, startTransition] = useTransition()
+  const router = useRouter()
 
   useEffect(()=> {
     const fetchUserById = async ()=> {
       try {
         startTransition(async ()=> {
-            const response = await fetch(`/api/getUserById?id=${id}`)
-
-            if(!response.ok){
-              throw new Error("User not found")
+            const fetchedUser = await getUserById(Number(id))
+            if(fetchedUser){
+              setUser(fetchedUser)
             }
-
-            const data : User = await response.json()
-
-            setUser(data)
         })
       }catch(error: any){
         setErrors(error.message)
@@ -45,21 +42,9 @@ export default function EditPageUser() {
 
     try {
       startTransition(async ()=> {
-        const response = await fetch('/api/updatedUser', {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json' 
-          },
-          body: JSON.stringify(user)
-        })
-
-        if(!response.ok){
-          throw new Error('An error occurred')
-        }
-
-        const data = await response.json()
-
-        setSuccess(`Utilisateur mis à jour - ${data.name}`)
+        
+        await updateUser(Number(id), user.name, user.email)
+        router.push('/actions')
       })
 
     }catch(error: any){

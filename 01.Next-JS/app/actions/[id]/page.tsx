@@ -3,7 +3,7 @@
 import {useState, useEffect, useTransition} from "react"
 import { useParams } from "next/navigation"
 import { User } from "@/types/types"
-
+import { getUserById } from "../services/actionUsers"
 
 export default function SinglePageUser() {
 
@@ -18,15 +18,13 @@ export default function SinglePageUser() {
     const fetchUserById = async ()=> {
       try {
         startTransition(async ()=> {
-            const response = await fetch(`/api/getUserById?id=${id}`)
+            
+          const fetechedUser = await getUserById(Number(id))
 
-            if(!response.ok){
-              throw new Error("User not found")
-            }
+          if(fetechedUser){
+            setUser(fetechedUser)
+          }
 
-            const data : User = await response.json()
-
-            setUser(data)
         })
       }catch(error: any){
         setErrors(error.message)
