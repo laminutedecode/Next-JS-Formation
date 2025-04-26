@@ -1,54 +1,72 @@
-# Next.js
+# Formation Next JS de A à Z
 
-Bienvenue dans le repository de la formation complète sur Next.js ! Ce repository contient les ressources et le code source utilisés dans la formation pour apprendre Next.js en profondeur.
+![La Minute De Code](https://www.laminutedecode.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fhtniyx9j%2Fproduction%2F03b8096ff9f9ee06d57ce9eb14b4c086b1f18526-1920x1080.webp&w=1920&q=75)
 
-## À propos de la formation
+## À propos de cette formation
 
-Cette formation vise à vous fournir toutes les compétences nécessaires pour maîtriser Next.js, une bibliothèque JavaScript pour construire des applications web modernes. Vous apprendrez à :
+Next.js est un framework JavaScript open-source basé sur React qui permet de créer des applications web performantes et optimisées. Cette formation complète vous guidera pas à pas à travers tous les aspects essentiels de Next.js, de l'installation initiale jusqu'au déploiement, en passant par l'intégration avec des technologies modernes comme Firebase, Prisma et NextAuth.
 
-- Créer des applications Next.js avec rendu côté serveur (SSR).
-- Gérer le routage et la navigation avec Next.js.
-- Intégrer des API externes et des services.
-- Utiliser des techniques avancées comme le préchargement des pages et le rendu statique.
-- Appliquer des meilleures pratiques en matière de développement web avec Next.js.
+## Contenu de la formation
 
-## Contenu du Repository
+### Chapitre 1 : Les bases de Next.js
+- Introduction au framework Next.js
+- Installation et structure d'une application
+- Système de routing (routes dynamiques, slugs, Catch All Segments)
+- Layouts et métadonnées
+- Composants essentiels (Link, Image, Form)
+- Hooks utiles (useRouter, usePathname, useParams)
+- API Routes et requêtes HTTP (GET, POST, PUT, DELETE)
+- Actions Server et gestion de données
+- Cookies et sessions
 
-Ce repository est organisé en plusieurs sections et chapitres correspondant aux différentes parties de la formation :
+### Chapitre 2 : Firebase avec Next.js
+- Configuration et intégration de Firebase
+- Création d'une base de données en temps réel
+- Opérations CRUD avec Firebase
+- Utilisation de RealTime Database
+- Authentification des utilisateurs
+- Connexion via services tiers (Google)
 
-1. **Introduction à Next.js** : Vue d'ensemble de Next.js, installation et configuration initiale.
-2. **Routage et navigation** : Utilisation du système de routage intégré de Next.js pour naviguer entre les pages.
-3. **Gestion des données** : Intégration et gestion des données avec des API externes.
-4. **Stylage avec Tailwind CSS** : Utilisation de Tailwind CSS pour le stylage des composants Next.js.
-5. **Déploiement de l'application** : Options de déploiement et bonnes pratiques.
+### Chapitre 3 : Prisma avec Next.js
+- Installation et configuration de Prisma
+- Modélisation de données
+- Prisma Client et Prisma Studio
+- Opérations CRUD avec Prisma
+- Relations entre modèles
+- Filtrage et sélection avancée
+- Intégration avec MySQL
 
-## Installation
+### Chapitre 4 : NextAuth avec Next.js
+- Configuration de NextAuth
+- Authentification via différents providers (Github, Google)
+- Gestion des sessions côté client et serveur
+- Création de pages de connexion et d'inscription
+- Implémentation du système Credentials Provider
+- Sécurisation des routes
 
-Pour utiliser les exemples et les exercices de cette formation, suivez ces étapes :
+### Chapitre 5 : Déploiement avec Vercel
+- Préparation du projet pour la production
+- Configuration de Vercel
+- Déploiement continu
+- Gestion des variables d'environnement
+- Optimisations de performance
+- 
 
-1. Clonez ce repository :
-    ```bash
-    git clone https://github.com/votre-utilisateur/NextJSFormation.git
-    ```
-2. Naviguez dans le dossier du projet :
-    ```bash
-    cd NextJSFormation
-    ```
-3. Installez les dépendances nécessaires :
-    ```bash
-    npm install
-    ```
-4. Lancez l'application en mode développement :
-    ```bash
-    npm run dev
-    ```
+## Prérequis
+- Connaissances de base en JavaScript et React
+- Environnement de développement Node.js
+- Éditeur de code (VS Code recommandé)
 
-5. Accédez à l'application dans votre navigateur à l'adresse `http://localhost:3000`.
+## Comment suivre cette formation
+Chaque chapitre est divisé en modules courts et concis, permettant un apprentissage progressif et approfondi. Des exercices pratiques et des projets concrets vous aideront à mettre en application les concepts abordés.
 
-## Utilisation
+## Liens utiles
+- [Site officiel de la formation](https://www.laminutedecode.com/formations/Next%20JS)
+- [Documentation officielle de Next.js](https://nextjs.org/docs)
 
-Explorez les différents chapitres et exemples pour comprendre et pratiquer les concepts abordés dans la formation Next.js. Chaque chapitre contient des fichiers et des instructions détaillées pour vous guider tout au long du processus d'apprentissage.
+## À propos de l'auteur
+Cette formation est proposée par La Minute De Code, une plateforme spécialisée dans l'enseignement du développement web à travers des formations structurées et accessibles.
 
-## Licence
+---
 
-Ce projet est la propriété de LaMinuteDeCode. Il est strictement interdit de copier ou de vendre ces ressources sans autorisation préalable. Voir le fichier `LICENSE` pour plus de détails.
+© 2025 La Minute De Code. Tous droits réservés.
